@@ -1,0 +1,11 @@
+Rule Book:
+
+Rule #1: Worst Case
+- First rule says that you need to care about and always develop your program to solve the problem in the worst scenario. If you are trying to find a yellow box in an array of 9 other brown box, you gonna have to develop thinking what if the yellow box is the last of the array, never thinking on the best scenario, always in the WORST!!
+Rule #2: Remove Constants
+- Second rule says to you that doesnt matter the number of linear operations you gonna do. For example, if you have two loops doing an operation, it means that the big o notation will be (2n), but when you look at the chart and see that the behaviour of the line will always the same, a line, you see that doesnt matter how many constants you put at the notation, it'll be always o(n) 
+Rule #3: Different terms for inputs
+- The third rule states that if there is two parameters in the function, and these two runs in two differents loops, it'll not be O(2n), but O(a + b) instead.
+- Other point to pay attention, is about nested loops. When we have two nested loops, the notations leaves + to go to *, so if we have n * n = n^2. -> THIS IS A HORRIBLE PROGRAM!!!
+Rule #4: Drop Non Dominants
+- This is better explaned when we have two loops in a function. On of these loops is nested and the other no, so the big O notation would be Big O (n + n^2), but by the fourth rule, we would drop the non dominant notation, so the right answer it would be Big O (n^2).
